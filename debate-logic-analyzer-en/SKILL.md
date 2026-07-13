@@ -111,6 +111,15 @@ The boundary to respect: comment on what the *structure* of the argument reveals
 
 When the argument is informal by nature (induction, analogy, abduction), acknowledge it and formalize only the inferential skeleton, noting that a complete evaluation depends on material criteria that fall outside this step. Do not force propositional formalization onto argumentation that cannot bear it — that is worse than not formalizing at all.
 
+Minimal-skeleton example for an inductive argument — do not use ⊢ (which marks deductive entailment); mark the leap as support, not validity:
+```
+F(c₁), F(c₂), …, F(cₙ)        [observed cases]
+c₁…cₙ are a sample of C
+────────────────────────────  (inductive support, not entailment)
+probably ∀x (C(x) → F(x))
+```
+The skeleton exposes the leap — from sample to universal — without pretending it is deductively valid. Assessing the strength of the leap (size and representativeness of the sample) is material analysis: flag it and move on. The same holds for analogy (make the source, target, and transferred property explicit, and mark relevance as a material question) and for abduction (state the hypothesis and the alternatives it would need to rule out).
+
 When the argument depends on an unstated universalization (typical case: a single example meant to hold for all cases of the type), extend the notation to first-order predicate logic. Add ∀ (universal) and ∃ (existential), and use unary or n-ary predicates (P(x), Q(x, y)) instead of simple propositional variables. Making the hidden universals visible is often the most important thing formalization reveals — the argument may be formally valid given the universals, but it is the universals that carry the contentious weight.
 
 ---
@@ -149,7 +158,63 @@ The paragraph must not literally repeat what the three prior sections already sa
 
 **Diagnostic constraint.** The verdict describes what the argument is, not what it could be. It identifies weaknesses; it does not suggest repairs. It points to where a premise carries weight it does not justify, where a leap overreaches what is sustained, where a naturalization operates in hiding. It does not write "could be softened", "worth reformulating", "would gain force if", or variants. The auditor's language is descriptive — the rhetorical adviser's is prescriptive, and each function demands distance from the other. Whoever audits their own text needs a cold reader, not an enthusiastic ally.
 
+**When the argument holds.** Not every text fails, and the auditor does not exist to manufacture defects. When an argument passes all three analyses — coherent diagram, valid inference, evidence whose conceptual mediation the author acknowledges — the verdict must say so with the same rigor it would bring to a failure, and state *why* it passes. Do not invent fragility to justify the audit; do not downgrade a "passes" to a "passes, but". The force of a critical verdict comes precisely from the auditor being able to recognize soundness when it is present. If the three analyses pass, the integrated verdict is a judgment of soundness, not an embarrassed qualification.
+
 Avoid stylistic vices common to audit prose: no corrective antithesis ("not X; rather Y"), no "not only… but also", no decorative triads. Adjectives counted. Humor only when organically justified by the material.
+
+---
+
+## Worked example
+
+This example shows the entire four-section flow over a short text. It serves as a calibration anchor — the expected tone, depth, and length. Do not copy it; use it as a standard of reference.
+
+**Analyzed text:**
+
+> "Merit should determine who occupies the best positions. Standardized tests measure merit objectively. Therefore, whoever scores highest should get the best spots. Anyone who denies this is defending privilege against competence."
+
+---
+
+**I. Nolt Diagram**
+
+- P1: Merit should determine access to the best positions.
+- P2: Standardized tests measure merit objectively.
+- C1: Whoever obtains the highest scores should occupy the best positions.
+- C2 (rhetorical): Denying C1 amounts to defending privilege against competence.
+
+```
+P1 + P2
+   |
+   C1
+   |
+   C2  (¬C1 → privilege)
+```
+
+Linked support: P1 and P2 sustain C1 only jointly. C2 does not derive from C1 — it is a glued-on move that converts the denial of the conclusion into an accusation. The chain is short, and the link P2→C1 concentrates all the weight.
+
+**II. Propositional Analysis**
+
+```
+M: merit should determine access to the best positions
+O: standardized tests measure merit objectively
+N: whoever obtains the highest scores should occupy the best positions
+
+(M ∧ O) → N
+M, O ⊢ N          modus ponens — formally valid
+```
+
+The core is valid: given M and O, N follows. But the validity is empty, owing to two material defects that formalization exposes. First, **complex-predicate reduction**: O treats "merit" — a multidimensional concept — as reducible to "standardized-test score", and that identification enters silently. Second, the final sentence is a **false dilemma**: `¬N → privilege` holds only if the sole alternatives are merit-by-test or privilege, which the premises do not establish.
+
+**III. Myth of the Given Test (strong reading)**
+
+1. Invoked evidence: "standardized tests measure merit objectively", presented as the uncontroversial base.
+2. Presupposed apparatus: for that measurement to count as evidence, the author must already have accepted (i) a definition of merit, (ii) that this definition is capturable by test performance, (iii) that "objective" equals standardized and quantifiable. None of the three is given — they are concepts that decide, in advance, what will count as merit.
+3. Naturalized level: the author invokes "objective measurement of merit" as if it were raw given, but it functions as evidence only within a conceptual space that presupposes a contestable theory — that merit is a measurable quantity and that the test captures it.
+
+Section verdict: **fails**, and the failure is **structural** — the entire conclusion rests on the naturalization of "merit" carried out in P2.
+
+**IV. Integrated Verdict**
+
+The argument is formally valid and epistemically fragile. The central link holds as modus ponens, but the impeccable form merely transports, intact, the decision P2 made without discussion: reducing merit to whatever the test measures. The rhetorical close aggravates the picture, trading examination of the conclusion for a false dilemma. It passes on form, it fails on the given. A correct syllogism built on a concept it refuses to examine.
 
 ---
 

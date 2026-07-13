@@ -111,6 +111,15 @@ A fronteira a respeitar: comente o que a *estrutura* do argumento revela, não a
 
 Quando o argumento for informal por natureza (indução, analogia, abdução), reconheça-o e formalize apenas o esqueleto inferencial, indicando que a avaliação completa depende de critérios materiais que ficam fora deste passo. Não force formalização proposicional sobre argumentação que não a comporta — isso é pior que não formalizar.
 
+Exemplo de esqueleto mínimo para um argumento indutivo — não use o ⊢ (que marca acarretamento dedutivo); marque o salto como suporte, não como validade:
+```
+F(c₁), F(c₂), …, F(cₙ)        [casos observados]
+c₁…cₙ são amostra de C
+────────────────────────────  (suporte indutivo, não acarretamento)
+provavelmente ∀x (C(x) → F(x))
+```
+O esqueleto expõe o salto — da amostra ao universal — sem fingir que ele é dedutivamente válido. Avaliar a força do salto (tamanho e representatividade da amostra) é análise material: sinalize e passe adiante. O mesmo vale para analogia (torne explícitas a fonte, o alvo e a propriedade transferida, e marque a relevância como questão material) e para abdução (enuncie a hipótese e as alternativas que ela precisaria descartar).
+
 Quando o argumento depender de uma universalização não enunciada (caso típico: exemplo singular que pretende valer para todos os casos do tipo), estenda a notação para lógica de predicados de primeira ordem. Adicione ∀ (universal) e ∃ (existencial), e use predicados unários ou n-ários (P(x), Q(x, y)) em vez de variáveis proposicionais simples. Tornar visíveis as universais escondidas é frequentemente o que a formalização revela de mais importante — o argumento pode ser formalmente válido dadas as universais, mas as universais é que carregam o peso polêmico.
 
 ---
@@ -149,7 +158,63 @@ O parágrafo não deve repetir literalmente o que as três seções anteriores j
 
 **Restrição diagnóstica.** O veredicto descreve o que o argumento é, não o que poderia ser. Identifica fragilidades; não sugere reparos. Aponta onde uma premissa carrega peso que não justifica, onde um salto extrapola o sustentado, onde uma naturalização opera escondida. Não escreve "pode ser suavizado", "vale reformular", "ganharia força se", nem variantes. A linguagem do auditor é descritiva — a do conselheiro retórico é prescritiva, e cada função exige distância da outra. Quem audita o próprio texto precisa de um leitor frio, não de um aliado entusiasta.
 
+**Quando o argumento se sustenta.** Nem todo texto falha, e o auditor não existe para fabricar defeitos. Quando um argumento passa nas três análises — diagrama coerente, inferência válida, evidências cuja mediação conceitual o autor reconhece —, o veredicto deve declará-lo com o mesmo rigor com que apontaria uma falha, e dizer *por quê* passou. Não invente fragilidade para justificar a auditoria; não rebaixe um "passa" a um "passa, mas". A força de um veredicto crítico vem justamente de o auditor ser capaz de reconhecer solidez quando ela está presente. Se as três análises passam, o veredicto integrado é um juízo de solidez, não uma ressalva envergonhada.
+
 Evite vícios estilísticos comuns na prosa de auditoria: nenhuma antítese de retificação ("não é X; é Y"), nenhum "não apenas… mas também", nenhuma triade decorativa. Adjetivos contados. Humor apenas se organicamente justificado pelo material.
+
+---
+
+## Exemplo completo
+
+Este exemplo mostra o fluxo inteiro das quatro seções sobre um texto curto. Serve de âncora de calibração — tom, profundidade e extensão esperados. Não o copie; use-o como referência de padrão.
+
+**Texto analisado:**
+
+> "O mérito deve determinar quem ocupa as melhores posições. As provas padronizadas medem mérito de forma objetiva. Portanto, quem tira as maiores notas deve ficar com as melhores vagas. Quem nega isso está defendendo o privilégio contra a competência."
+
+---
+
+**I. Diagrama de Nolt**
+
+- P1: O mérito deve determinar o acesso às melhores posições.
+- P2: As provas padronizadas medem mérito de forma objetiva.
+- C1: Quem obtém as maiores notas deve ocupar as melhores posições.
+- C2 (retórica): Negar C1 equivale a defender o privilégio contra a competência.
+
+```
+P1 + P2
+   |
+   C1
+   |
+   C2  (¬C1 → privilégio)
+```
+
+Suporte ligado: P1 e P2 só sustentam C1 em conjunto. C2 não deriva de C1 — é um movimento colado que converte a negação da conclusão numa acusação. A cadeia é curta e o elo P2→C1 concentra todo o peso.
+
+**II. Análise Proposicional**
+
+```
+M: o mérito deve determinar o acesso às melhores posições
+O: as provas padronizadas medem mérito de forma objetiva
+N: quem obtém as maiores notas deve ocupar as melhores posições
+
+(M ∧ O) → N
+M, O ⊢ N          modus ponens — formalmente válido
+```
+
+O núcleo é válido: dadas M e O, N segue. Mas a validade é vazia, por dois defeitos materiais que a formalização expõe. Primeiro, **redução de predicado complexo**: O trata "mérito" — conceito multidimensional — como redutível a "nota em prova padronizada", e essa identificação entra silenciosa. Segundo, a frase final é **falso dilema**: `¬N → privilégio` só se sustenta se as únicas alternativas forem mérito-por-prova ou privilégio, o que a premissa não estabelece.
+
+**III. Teste do Mito do Dado (leitura forte)**
+
+1. Evidência invocada: "as provas padronizadas medem mérito de forma objetiva", apresentada como base não-controversa.
+2. Aparato pressuposto: para que essa medição conte como evidência, o autor precisa já ter aceito (i) uma definição de mérito, (ii) que essa definição é capturável por desempenho em prova, (iii) que "objetivo" equivale a padronizado e quantificável. Nenhum dos três é dado — são conceitos que decidem, de antemão, o que contará como mérito.
+3. Nível naturalizado: o autor invoca "medição objetiva de mérito" como se fosse dado bruto, mas isso só funciona como evidência dentro de um espaço conceitual que pressupõe uma teoria contestável — a de que mérito é uma quantidade mensurável e que a prova a captura.
+
+Veredicto da seção: **falha**, e a falha é **estrutural** — a conclusão inteira repousa sobre a naturalização de "mérito" operada em P2.
+
+**IV. Veredicto integrado**
+
+O argumento é formalmente válido e epistemicamente frágil. O elo central sustenta-se como modus ponens, mas a forma impecável apenas transporta, intacta, a decisão que P2 tomou sem discussão: reduzir mérito ao que a prova mede. O fecho retórico agrava o quadro, trocando o exame da conclusão por um falso dilema. Passa na forma, falha no dado. Um silogismo correto erguido sobre um conceito que se recusa a examinar.
 
 ---
 
