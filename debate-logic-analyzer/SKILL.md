@@ -214,7 +214,7 @@ Veredicto da seção: **falha**, e a falha é **estrutural** — a conclusão in
 
 **IV. Veredicto integrado**
 
-O argumento é formalmente válido e epistemicamente frágil. O elo central sustenta-se como modus ponens, mas a forma impecável apenas transporta, intacta, a decisão que P2 tomou sem discussão: reduzir mérito ao que a prova mede. O fecho retórico agrava o quadro, trocando o exame da conclusão por um falso dilema. Passa na forma, falha no dado. Um silogismo correto erguido sobre um conceito que se recusa a examinar.
+O argumento é formalmente válido e epistemicamente frágil. O elo central sustenta-se como modus ponens, mas a forma impecável apenas transporta, intacta, a decisão que P2 tomou sem discussão: reduzir mérito ao que a prova mede. O desfecho retórico agrava o quadro, trocando o exame da conclusão por um falso dilema. Passa na forma, falha no dado. Um silogismo correto erguido sobre um conceito que se recusa a examinar.
 
 ---
 

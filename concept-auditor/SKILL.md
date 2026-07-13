@@ -121,7 +121,7 @@ Este exemplo mostra o fluxo inteiro das quatro seções sobre um texto curto. Se
 
 **II. Teste de estabilidade**
 
-**Equívoco** sobre *natural*, envolvendo u1, u2 e u3. O argumento só flui se os três forem o mesmo conceito: a premissa valorativa (u1) empresta seu "bom" ao sentido produtivo (u2, o orgânico) e ao sentido evolutivo (u3), como se estabelecer que o orgânico é "natural-u2" bastasse para herdar o "bom" de "natural-u1". São três conceitos distintos sob um único significante. Há ainda **deslizamento semântico** no fecho: a migração u2 → u3 ("sem interferência artificial" para "o que a evolução preparou") é gradual e nenhuma cláusula isolada parece culpada, mas início e fim usam *natural* de formas incompatíveis.
+**Equívoco** sobre *natural*, envolvendo u1, u2 e u3. O argumento só flui se os três forem o mesmo conceito: a premissa valorativa (u1) empresta seu "bom" ao sentido produtivo (u2, o orgânico) e ao sentido evolutivo (u3), como se estabelecer que o orgânico é "natural-u2" bastasse para herdar o "bom" de "natural-u1". São três conceitos distintos sob um único significante. Há ainda **deslizamento semântico** no desfecho: a migração u2 → u3 ("sem interferência artificial" para "o que a evolução preparou") é gradual e nenhuma cláusula isolada parece culpada, mas início e fim usam *natural* de formas incompatíveis.
 
 **III. Teste de definição**
 
