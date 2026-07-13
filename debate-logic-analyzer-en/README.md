@@ -49,7 +49,7 @@ Once installed, invoke it by asking to analyze, audit, diagram, check the logic,
 ## Foundations
 
 - **Nolt Diagram** — Nolt, John. *Informal Logic: Possible Worlds and Imagination*.
-- **Propositional and predicate logic** — Copi, Irving M. *Introduction to Logic*.
+- **Propositional and predicate logic** — Gensler, Harry J. *Introduction to Logic*. London: Routledge.
 - **Myth of the Given** — Sellars, Wilfrid. *Empiricism and the Philosophy of Mind* (1956); extensions in McDowell (*Mind and World*) and Brandom (*Making It Explicit*).
 
 ## License
