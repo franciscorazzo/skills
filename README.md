@@ -10,6 +10,7 @@ Coleção de Agent Skills de Francisco Razzo.
 - **[rhetoric-analyzer](rhetoric-analyzer/)** *(pt-br)* — Análise retórica: meios de persuasão (ethos/pathos/logos), enquadramento e esquemas argumentativos (com perguntas críticas, à la Walton), e táticas dialéticas. Responde como o texto persuade, para além das razões.
 - **[rhetoric-analyzer-en](rhetoric-analyzer-en/)** *(English)* — English version of the rhetorical analysis: means of persuasion (ethos/pathos/logos), framing and argumentation schemes (with critical questions, à la Walton), and dialectical tactics.
 - **[steelman](steelman/)** *(pt-br)* — Reconstrução caridosa: dado um texto que critica uma posição, reconstrói a versão mais forte dela e checa se a crítica a atinge ou só vence um espantalho. Também em modo red-team da própria tese. À la Rapoport/Dennett, Mill.
+- **[steelman-en](steelman-en/)** *(English)* — English version of the charitable reconstruction: rebuilds the strongest form of the opposing position and tests whether the criticism reaches it or only defeats a straw man. Also a red-team mode.
 
 ## Licença
 
